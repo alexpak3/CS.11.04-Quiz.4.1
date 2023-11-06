@@ -42,7 +42,7 @@ public class Main {
      "The_Stealth-Warrior" gets converted to "TheStealthWarrior" **/
     public static String camelCaseMe(String str) {
         String result = "";
-        for (int i = 0; i < str.length(); i++) {
+        for (int i = 0; i < str.length()-1; i++) {
             if (str.charAt(i) == '-' || str.charAt(i) == '_') {
 
                 result += str.substring(0, i) + (str.charAt(i + 1) + "").toUpperCase() + str.substring(i + 2);
